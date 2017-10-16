@@ -3,54 +3,55 @@ const fs = require('fs');
 const dateFormat = require('dateformat');
 const os = require('os');
 const request = require('request');
-var sortedMap = require("collections/sorted-map");
 
-var path = '/v1/getboard';
-var query = '';
-var url = 'https://api.bitflyer.jp' + path + query;
-var options = {
+let path = '/v1/getboard';
+let query = '';
+let url = 'https://api.bitflyer.jp' + path + query;
+let options = {
     url: url,
 }
-var askBook = {};
-var bidBook = {};
+let askBook = new Map();
+let bidBook = new Map();
 
 request(options, function (err, response, payload) {
-    var data = JSON.parse(payload);
-    var bids = data["bids"];
-    var asks = data["asks"];
-    for (var i = 0; i < bids.length; i ++) {
-        bidBook[bids[i]['price']] = bids[i];
+    let data = JSON.parse(payload);
+    let bids = data["bids"];
+    let asks = data["asks"];
+    for (let i = 0; i < bids.length; i ++) {
+        bidBook.set(-[bids[i]["price"]], bids[i]["size"]);
     }
-    for (var i = 0; i < asks.length; i ++) {
-        askBook[asks[i]['price']] = asks[i];
+    for (let i = 0; i < asks.length; i ++) {
+        askBook.set(asks[i]["price"], asks[i]["size"]);
     }
     startRecord();
     setTimeout(recordCurrentData, 500);
 });
 
 function startRecord() {
-    var pubnub = new PubNub({
+    let pubnub = new PubNub({
         subscribeKey: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'
     });
     pubnub.addListener({
         message: function (message) {
-            var data = message.message;
-            var bids = data["bids"];
-            var asks = data["asks"];
-            for (var i = 0; i < bids.length; i ++) {
+            let data = message.message;
+            let bids = data["bids"];
+            let asks = data["asks"];
+            for (let i = 0; i < bids.length; i ++) {
                 if (bids[i]["size"] == 0) {
-                    delete bidBook[bids[i]['price']];
+                    bidBook.delete(- bids[i]['price']);
                     continue;
                 }
-                bidBook[bids[i]['price']] = bids[i]["size"];
+                bidBook.set(-[bids[i]["price"]], bids[i]["size"]);
             }
-            for (var i = 0; i < asks.length; i ++) {
+            for (let i = 0; i < asks.length; i ++) {
                 if (asks[i]["size"] == 0) {
-                    delete askBook[asks[i]['price']];
+                    askBook.delete(asks[i]['price']);
                     continue;
                 }
-                askBook[asks[i]['price']] = asks[i]["size"];
+                askBook.set([asks[i]["price"]], asks[i]["size"]);
             }
+            console.log(bids);
+            console.log(asks);
         }
     });
     pubnub.subscribe({
@@ -59,39 +60,50 @@ function startRecord() {
 }
 
 function recordCurrentData() {
-    var fileName = "./trade_data/trade_data.csv";
+    let fileName = "./trade_data/trade_data.csv";
     if (!fs.existsSync(fileName)) {
         fs.closeSync(fs.openSync(fileName, 'w'));
     }
-    var req = new Date();
-    var stats = fs.statSync(fileName)
+    let req = new Date();
+    let stats = fs.statSync(fileName)
     if (!stats["size"]) {
         fs.appendFileSync(fileName,
             "timestamp,"  +
             "localtime," +
             "askprice1,askvolume1,bidprice1,bidvolume1,askprice2,askvolume2,bidprice2,bidvolume2,askprice3,askvolume3,bidprice3,bidvolume3,askprice4,askvolume4,bidprice4,bidvolume4,askprice5,askvolume5,bidprice5,bidvolume5,askprice6,askvolume6,bidprice6,bidvolume6,askprice7,askvolume7,bidprice7,bidvolume7,askprice8,askvolume8,bidprice8,bidvolume8,askprice9,askvolume9,bidprice9,bidvolume9,askprice10,askvolume10,bidprice10,bidvolume10" + os.EOL);
     }
-    var timestamp = new Date().getTime();
-    var localtime = dateFormat(timestamp, "yyyymmdd HH:MM:ss:l Z");
+    let timestamp = new Date().getTime();
+    let localtime = dateFormat(timestamp, "yyyymmdd HH:MM:ss:l Z");
 
+    let asks = askBook.keys();
+    let bids = bidBook.keys();
+    let askbids = "";
+    for (let i = 0; i < 10; i ++) {
+        if (i < askBook.size) {
+            let key = asks.next().value;
+            askbids += key + ",";
+            askbids += askBook.get(key) + ",";
+        } else {
+            askbids += "NaN,"
+            askbids += "NaN,"
 
-
-    for (var i = 0; i < 10; i++) {
-        askbids += asks[i]["price"] + ",";
-        askbids += asks[i]["size"] + ",";
-        askbids += bids[i]["price"] + ",";
-        askbids += bids[i]["size"] + ",";
+        }
+        if (i < bidBook.size) {
+            let key = bids.next().value;
+            askbids += -key + ",";
+            askbids += bidBook.get(key) + ",";
+        } else {
+            askbids += "NaN,"
+            askbids += "NaN,"
+        }
     }
-
-
-
-
+    askbids = askbids.slice(0, -1);
     fs.appendFileSync(fileName,
         timestamp +
         "," +
         localtime +
         "," +
-        + os.EOL);
+        askbids + os.EOL);
     setTimeout(recordCurrentData, 500);
 }
 

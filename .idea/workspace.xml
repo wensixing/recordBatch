@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10c6f428-8328-4250-8258-76ed0f5bc974" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getOrderBook.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getTradeSummary.js" afterPath="$PROJECT_DIR$/getTradeSummary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getOrderBook.js" afterPath="$PROJECT_DIR$/getOrderBook.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,9 +22,17 @@
       <file leaf-file-name="getTradeData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getTradeData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="489">
               <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+                <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +40,18 @@
       <file leaf-file-name="getOrderBook.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getOrderBook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="-60">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trade_data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trade_data/trade_data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="289" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -42,19 +60,20 @@
       <file leaf-file-name="getTradeSummary.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="555">
               <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trade_summary.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trade_data/trade_summary.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-              <folding />
+              <folding>
+                <marker date="1508054100000" expanded="true" signature="152:218" ph="{&quot;subscribeKey&quot;: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'...}" />
+                <marker date="1508054100000" expanded="true" signature="356:882" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="390:880" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="475:874" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="668:762" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="768:864" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="902:952" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="1022:1811" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="1111:1168" ph="{...}" />
+                <marker date="1508054100000" expanded="true" signature="1231:1388" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,10 +121,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-217" />
-    <option name="y" value="145" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+    <option name="x" value="-636" />
+    <option name="y" value="-1417" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -149,26 +168,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="bitflyer_trade_history" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitflyer_trade_history" type="462c0819:PsiDirectoryNode" />
+              <item name="recordBatch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recordBatch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -206,7 +228,7 @@
         </option>
       </EXTENSION>
     </configuration>
-    <configuration name="orderbook" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" node-parameters="getOrderBook.js" working-dir="$PROJECT_DIR$">
+    <configuration name="orderbook" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" node-parameters="getOrderBook.js" working-dir="$PROJECT_DIR$">
       <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
         <option name="envVars">
           <list />
@@ -271,24 +293,28 @@
       <workItem from="1507692572932" duration="14445000" />
       <workItem from="1507780224524" duration="15507000" />
       <workItem from="1507947316571" duration="5343000" />
+      <workItem from="1508054145646" duration="2180000" />
+      <workItem from="1508155970749" duration="121000" />
+      <workItem from="1508156111386" duration="3495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35295000" />
+    <option name="totallyTimeSpent" value="41091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-636" y="-1417" width="2560" height="1417" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11820331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13154785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31264916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5742879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2317167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -311,25 +337,166 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/getTradeData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trade_data/trade_summary.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+            <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="152:218" ph="{&quot;subscribeKey&quot;: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'...}" />
+            <marker date="1508054100000" expanded="true" signature="356:882" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="390:880" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="475:874" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="668:762" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="768:864" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="902:952" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1022:1811" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1111:1168" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1231:1388" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getOrderBook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getTradeData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+            <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="152:218" ph="{&quot;subscribeKey&quot;: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'...}" />
+            <marker date="1508054100000" expanded="true" signature="356:882" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="390:880" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="475:874" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="668:762" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="768:864" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="902:952" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1022:1811" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1111:1168" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1231:1388" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getOrderBook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getTradeData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+            <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="152:218" ph="{&quot;subscribeKey&quot;: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'...}" />
+            <marker date="1508054100000" expanded="true" signature="356:882" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="390:880" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="475:874" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="668:762" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="768:864" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="902:952" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1022:1811" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1111:1168" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1231:1388" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getOrderBook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getTradeData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+            <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trade_data/trade_summary.csv" />
+    <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="152:218" ph="{&quot;subscribeKey&quot;: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'...}" />
+            <marker date="1508054100000" expanded="true" signature="356:882" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="390:880" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="475:874" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="668:762" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="768:864" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="902:952" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1022:1811" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1111:1168" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1231:1388" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -337,7 +504,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+            <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -349,71 +524,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/WdStockLevel10_600260_20170904.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trade_data/trade_history.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="57" lean-forward="true" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/WdStockLevel10_600260_20170904.csv" />
+    <entry file="file://$PROJECT_DIR$/trade_data/trade_history.csv" />
     <entry file="file://$PROJECT_DIR$/pubnub.js" />
-    <entry file="file://$USER_HOME$/Downloads/WdStockLevel10_600260_20170904.csv">
+    <entry file="file://$USER_HOME$/Downloads/WdStockLevel10_600260_20170904.csv" />
+    <entry file="file://$PROJECT_DIR$/bitflyerPubnub.js" />
+    <entry file="file://$PROJECT_DIR$/trade_data/trade_history.csv" />
+    <entry file="file://$PROJECT_DIR$/trade_data/trade_summary.csv" />
+    <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="607" lean-forward="false" selection-start-line="0" selection-start-column="607" selection-end-line="0" selection-end-column="607" />
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="152:218" ph="{&quot;subscribeKey&quot;: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'...}" />
+            <marker date="1508054100000" expanded="true" signature="356:882" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="390:880" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="475:874" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="668:762" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="768:864" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="902:952" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1022:1811" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1111:1168" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1231:1388" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitflyerPubnub.js" />
-    <entry file="file://$PROJECT_DIR$/trade_data/trade_history.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="988" column="82" lean-forward="false" selection-start-line="988" selection-start-column="82" selection-end-line="988" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trade_data/trade_summary.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getTradeSummary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="352">
+          <caret line="567" column="12" lean-forward="false" selection-start-line="567" selection-start-column="12" selection-end-line="567" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getTradeData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="489">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1508054100000" expanded="true" signature="195:244" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="273:2171" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="453:478" ph="{&quot;url&quot;: url...}" />
+            <marker date="1508054100000" expanded="true" signature="513:570" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="659:1240" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1296:2167" ph="{...}" />
+            <marker date="1508054100000" expanded="true" signature="1738:1935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trade_data/trade_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="289" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/getOrderBook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="-60">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
         </state>
       </provider>
