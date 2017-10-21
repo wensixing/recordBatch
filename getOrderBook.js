@@ -3,6 +3,9 @@ const fs = require('fs');
 const dateFormat = require('dateformat');
 const os = require('os');
 const request = require('request');
+const comLog = require("./commonLog")
+
+let recordInterval = 500; // 每隔500ms 记录数据
 
 let path = '/v1/getboard';
 let query = '';
@@ -12,8 +15,14 @@ let options = {
 }
 let askBook = new Map();
 let bidBook = new Map();
+let log = new comLog("trade_data");
 
+// 初始化，记录所有orderBook
 request(options, function (err, response, payload) {
+    if (err) {
+        log.error(JSON.stringify(err));
+        throw err;
+    }
     let data = JSON.parse(payload);
     let bids = data["bids"];
     let asks = data["asks"];
@@ -24,15 +33,24 @@ request(options, function (err, response, payload) {
         askBook.set(asks[i]["price"], asks[i]["size"]);
     }
     startRecord();
-    setTimeout(recordCurrentData, 500);
+    setTimeout(recordCurrentData, recordInterval);
 });
 
+
+
+
+/* ---------- functions ----------- */
+// 设置pubnub, 接受新的order，更新本地orderBook
 function startRecord() {
     let pubnub = new PubNub({
         subscribeKey: 'sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f'
     });
     pubnub.addListener({
         message: function (message) {
+            if (!('message' in message)) {
+                log.error(JSON.stringify(message));
+                throw message;
+            }
             let data = message.message;
             let bids = data["bids"];
             let asks = data["asks"];
@@ -50,8 +68,6 @@ function startRecord() {
                 }
                 askBook.set([asks[i]["price"]], asks[i]["size"]);
             }
-            console.log(bids);
-            console.log(asks);
         }
     });
     pubnub.subscribe({
@@ -59,6 +75,7 @@ function startRecord() {
     });
 }
 
+// 记录当前level 10 orderBook
 function recordCurrentData() {
     let timestamp = new Date().getTime();
     let subfix = dateFormat(timestamp, "yyyy-mm-dd");
@@ -104,7 +121,7 @@ function recordCurrentData() {
         localtime +
         "," +
         askbids + os.EOL);
-    setTimeout(recordCurrentData, 500);
+    setTimeout(recordCurrentData, recordInterval);
 }
 
 

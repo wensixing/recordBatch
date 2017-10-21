@@ -292,6 +292,7 @@
       "resolved": "https://registry.npmjs.org/lil-uuid/-/lil-uuid-0.1.1.tgz",
       "version": "0.1.1"
     },
+    "log": "^1.4.0",
     "lru-cache": {
       "integrity": "sha1-5W1jVBSO3o13B7WNFDIg/QjfD9U=",
       "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-2.6.5.tgz",
@@ -449,6 +450,7 @@
       "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.3.tgz",
       "version": "2.3.3"
     },
+    "redis": "^2.8.0",
     "request": "^2.83.0",
     "safe-buffer": {
       "integrity": "sha512-kKvNJn6Mm93gAczWVJg7wH+wGYWNrDHdWvpUmHyEsgCtIwwo3bqPtV4tR5tuPaUhTOo/kvhVwd8XwwOllGYkbg==",
